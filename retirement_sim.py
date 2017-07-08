@@ -52,13 +52,13 @@ class retire :
         while (self.corpus > 0):
             res = self.sim_year()
             if (res == False):
-		print("#" * 79)
+		print("#" * 79) # prints a separator
                 print("out of moolah")
                 return
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
+    if len(sys.argv) != 5:
         # python ./retirement.py 1200000 50000 7 5000
         print("Usage:" + sys.argv[0] + "<corpus> <expenses_annual> <inflation_rate> <annual_topup>")
         sys.exit(1)
