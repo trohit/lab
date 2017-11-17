@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <stdlib.h>
+// will use magic numbers from:
+// https://en.wikipedia.org/wiki/Magic_number_(programming)
 #define SUPERMAGIC_HEAD 0xcafebabe
 #define SUPERMAGIC_TRAILER 0xdeadbeef
 #define MAXFS_INODES 1024
