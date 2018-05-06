@@ -4,6 +4,7 @@
 # by default, 
 # python -m SimpleHTTPServer
 # listens on all interfaces
+# src: https://www.linuxjournal.com/content/tech-tip-really-simple-http-server-python
 
 import sys
 import BaseHTTPServer
