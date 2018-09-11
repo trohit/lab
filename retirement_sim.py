@@ -52,7 +52,7 @@ class retire :
         while (self.corpus > 0):
             res = self.sim_year()
             if (res == False):
-		print("#" * 79) # prints a separator
+                print("#" * 79) # prints a separator
                 print("out of moolah")
                 return
 
