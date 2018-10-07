@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Deploy Stuff</title>
+ </head>
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <body>
+  <h1> Deploy Software</h1>
+  <div class="container-fluid">
+    <form class="form-horizontal"  method="get" action="deploy">
+    <span class="glyphicon glyphicon-star"></span>
+    Enter appliance to deploy on: <input type="text" id="a" name="a">
+    <br>
+    <span class="glyphicon glyphicon-plus"></span>
+    Optional custom string:<br>:<input id="custom" name="custom" type="text" value="latest">
+    <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
