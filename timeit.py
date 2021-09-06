@@ -11,3 +11,5 @@ time.sleep(1)
 # end time - t2
 t2 = time.time()
 print(t2-t1)
+# print("Total Time:" + str(time.strftime("%H:%M:%S", time.gmtime(t2-t1))))
+
