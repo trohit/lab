@@ -67,8 +67,17 @@ a.schema
   }
 }
 """
-
 def load_json(json_file:str, schema_file = None)->dict:
+  """
+  load_json loads a json file and returns a dict
+  optionally compares and validates json against a schema file if provided
+
+  @param: json_file: path to json_file
+  @param: schema_file: path to schema file to validate against
+
+  @rtype: dict
+  @return: returns a dict if json matches the schema
+  """
   dd = {}
   if json_file and schema_file:
     if not is_valid_json_for_schema(schema_file, json_file):
@@ -79,6 +88,16 @@ def load_json(json_file:str, schema_file = None)->dict:
     return dd
 
 def save_json(dd_json:Dict, json_file:str, schema_file = None)-> bool:
+  """
+  save_json saves a json file after optionally comparing it to a schema
+  file if provided
+
+  @param: dd_json, a dictionary to save to json 
+  @param: json_file: path to json_file
+  @param: schema_file: path to schema file to validate against
+  @rtype: bool 
+  @return :returns False if json does not match the schema
+  """
   dd = {}
   if json_file and schema_file:
     if not is_valid_json_for_schema(schema_file, json_file):
